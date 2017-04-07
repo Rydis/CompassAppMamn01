@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rydis.compassapp.MainActivity">
+
+    <Button
+        android:id="@+id/Compass"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="70dp"
+        android:onClick="compassView"
+        android:text="Compass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSensor"
+        tools:onClick="compassView" />
+
+    <Button
+        android:id="@+id/Accelerometer"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="11dp"
+        android:onClick="accelerometerView"
+        android:text="Accelerometer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectSensor"
+        tools:onClick="accelerometerView" />
+
+    <TextView
+        android:id="@+id/selectSensor"
+        android:layout_width="222dp"
+        android:layout_height="77dp"
+        android:text="Select sensor"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="75dp"
+        android:textAlignment="gravity"
+        android:gravity="center"/>
+
+</android.support.constraint.ConstraintLayout>
